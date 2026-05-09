@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+}
+
+/* Header */
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    background-color: antiquewhite;
+}
+
+.logo{
+    height: 40px;
+    width: 100px;
+}
+
+#navBar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navBar li{
+    list-style-type: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navBar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(88, 88, 88);
+    transition: 0.3s ease;
+}
+
+#navBar li a:hover,
+#navBar li a.active {
+    color: rgb(187, 114, 114);
+}
+
+#navBar li a.active::after,
+#navBar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: rgb(187, 114, 114);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+/* Home Page */
+#hero{
+    background-image: url("img/hero.avif");
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#hero h4 {
+    padding-bottom: 15px;
+}
+
+#hero h1 {
+    color: rgb(253, 87, 87);
+}
+
+#hero button {
+    background-image: url("img/button.png");
+    background-size: cover;
+    background-color: transparent;
+    color:white;
+    border: 0;
+    padding: 30px 80px 10px 65px;
+    font-size: 18px;
+    font-weight: 700;
+}
